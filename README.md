@@ -1,3 +1,5 @@
-## MASK RCNN
-Google Colab (Jupyter) notebook to train Instance Segmentation Tensorflow model with custom dataset, based on Matterport Mask R-CNN.
-Chcek Mask RCNN original paper (https://arxiv.org/pdf/1703.06870.pdf).
+# Mask R-CNN for Instance Segmentation
+
+A TensorFlow implementation of Mask R-CNN for training custom instance segmentation models, based on the Matterport Mask R-CNN repository and optimized for Google Colab environments. This project provides a ready-to-use framework for detecting objects in images while simultaneously generating high-quality segmentation masks for each instance. The implementation includes pre-trained COCO weights for transfer learning, configurable model parameters, visualization tools, and multi-GPU training support. Check the original [Mask R-CNN paper](https://arxiv.org/pdf/1703.06870.pdf) by He et al. (2017) for technical details.
+
+The project structure includes core modules for model configuration (`config.py`), the main Mask R-CNN implementation (`model.py`), utility functions (`utils.py`), visualization tools (`visualize.py`), and parallel model support for multi-GPU training. To get started, clone the repository, install dependencies (TensorFlow, NumPy, OpenCV, Matplotlib, PIL), and load the pre-trained COCO weights which are automatically downloaded on first run. The model can be trained on custom datasets and configured through the `CustomConfig` class by adjusting parameters such as number of classes, image dimensions, GPU count, and training steps.
